@@ -1,0 +1,75 @@
+
+
+
+.skill-heading {
+  background-color: #000000 no-repeat 50% 50%;
+  position: relative;
+  font-size: 100px;
+  margin-top: 200px;
+  text-align: center;
+  margin-left: 12%;
+  height: 500px;
+  width: 900px;
+  top: -60px;
+  display: flex;
+ 
+}
+div span {
+  width: 16.6666666%;
+  display: inline-block;
+  float: left;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  opacity: 0
+}
+div span:nth-child(1) {
+  animation-name: animC;
+}
+div span:nth-child(2) {
+  color: #ffffff;
+  animation-name: animO1;
+}
+div span:nth-child(3) {
+  color: #ffffff;
+  animation-name: animS1;
+}
+div span:nth-child(4) {
+  color: #ffffff;
+  animation-name: animM;
+}
+div span:nth-child(5) {
+  color: #ffffff;
+  animation-name: animO2;
+}
+div span:nth-child(6) {
+  color: #ffffff;
+  animation-name: animS2;
+}
+
+@keyframes animC {
+  0% , 90% { transform: translate3D( 240%,0,-400px ) rotateY( 85deg ); color: #ffffff;  opacity: 0 }
+  10%, 80% { transform: translate3D( 220%,0,0 ) rotateY( 40deg ); color: #ffffff;opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+@keyframes animO1 {
+  15%, 75% { transform: translate3D( 120%,0, 0 ) rotateY( 90deg ); color: #ffffff; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #ffffff; opacity: 1 }
+}
+@keyframes animS1 {
+  20%, 70% { transform: translate3D( 30%,0, 0 ) rotateY( 90deg ); color: #ffffff; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #ffffff; opacity: 1 }
+}
+@keyframes animM {
+  20%, 70% { transform: translate3D( -30%,0, 0 ) rotateY( -90deg ); color: #ffffff; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #ffffff; opacity: 1 }
+}
+@keyframes animO2 {
+  15%, 75% { transform: translate3D( -120%,0, 0 ) rotateY( -90deg ); color: #ffffff; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #ffffff; opacity: 1 }
+}
+@keyframes animS2 {
+  0% , 90% { transform: translate3D( -240%,0,-400px ) rotateY( -85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( -220%,0,0 ) rotateY( -40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}

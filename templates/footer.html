@@ -1,0 +1,46 @@
+<div class="footer">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-down-right-circle-fill" viewBox="0 0 16 16">
+      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m5.904-2.803a.5.5 0 1 0-.707.707L9.293 10H6.525a.5.5 0 0 0 0 1H10.5a.5.5 0 0 0 .5-.5V6.525a.5.5 0 0 0-1 0v2.768z"/>
+    </svg>
+  </div>
+  <div class="footer-heading">
+     Let's work together
+  </div>
+  <a href="{% url 'contactApp:Contact' %}"><div class="getintouch" id="getInTouch">
+    <h1>Connect</h1>
+</div></a>
+<div class="footer_base">
+  <div class="footer_base1 b03_skewed_slide_in">
+      <div><strong>{{ email }}</strong></div>
+      <div></div>
+      <div>+91 {{ phone_number }}</div>
+  </div>
+</div>
+<div class="footer_social">
+  <ul class="browser-list">
+    <li class="browser-item">
+      <a href="{{ linkedin_link }}" class="browser-link">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </li>
+    <li class="browser-item">
+      <a href="{{ github_link }}" class="browser-link">
+        <i class="bi bi-github"></i>
+      </a>
+    </li>
+    <li class="browser-item">
+      <a href="{{ twitter_link }}" class="browser-link">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+    </li>
+    <li class="browser-item">
+      <a href="{{ instagram_link }}" class="browser-link">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+</div>

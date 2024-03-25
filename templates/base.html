@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shanu-shahbin.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+     <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+     <link rel="stylesheet" href="{% static 'style/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'style/base.css' %}">
+    <link rel="stylesheet" href="{% static 'style/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'style/home.css' %}">
+    <link rel="stylesheet" href="{% static 'style/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'style/Skills.css' %}">
+    <link rel="stylesheet" href="{% static 'style/Skill-heading.css' %}">
+    <link rel="stylesheet" href="{% static 'style/Works.css' %}">
+    <link rel="stylesheet" href="{% static 'style/short-about.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+<div class="wrapper-main">
+<div class="navbar">
+    {% include 'navbar.html' %}
+</div>
+<div>
+    {% include 'home.html' %}
+    {% block content %}
+    {% endblock %}
+</div>
+<div class="short-about">
+    {% include 'short-about.html' %}
+</div>
+
+<div class="skills">
+    {% include 'skills.html' %}
+</div>
+<div class="skills-heading" ">
+    {% include 'skill-heading.html' %}
+</div>
+<div class="works">
+    {% include 'works.html' %}
+</div>
+<div class="footer-container">
+    {% include 'footer.html' %}
+</div>
+</div>
+<script src="{% static 'scripts/Works.js' %}"></script>
+<script src="{% static 'scripts/magnetic.js' %}"></script>
+<script src="{% static 'scripts/projects.js' %}"></script>
+<script src="{% static 'scripts/footer.js' %}"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

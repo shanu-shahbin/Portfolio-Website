@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?familt=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+    overflow-y: scroll;
+    --button-hamburguer: #6c757d;
+}
+
+
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo{
+    font-size: 2em;
+    color: blue;
+    pointer-events: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    width: clamp(6em, 5.5vw, 5em);
+    height: clamp(6em, 5.5vw, 5em);
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s, color 1s, box-shadow 4s;
+
+}
+
+.navigation a:hover, .navigation a.active {
+    background: #fff;
+    color: #000;
+   box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0;
+   
+
+}
+
+.btn-click {
+    width: clamp(4em, 5.5vw, 5em);
+    height: clamp(4em, 5.5vw, 5em);
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--button-hamburguer);
+    transition: background-color .25s cubic-bezier(0.36, 0, 0.66, 0), box-shadow .25s cubic-bezier(0.36, 0, 0.66, 0);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+}
+
+
+.navbar-part{
+
+ margin-left: 50%;
+ margin-top:2%;
+ color: #ffffff;
+}
+
+
+ .btn-clicks {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+.branding {
+    font-weight: normal;
+    color: yellow;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.branding .btn-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    pointer-events: none;
+    will-change: transform, color;
+}
+
+.branding .code-by {
+    transform: translateX(0) rotate(0.001deg);
+    position: relative;
+    display: inline-block;
+    transition: var(--animation-primary);
+}
+
+.branding a:hover .code-by {
+    transform: translateX(-3.7em) rotate(0.001deg);
+    
+}
+
+
+.branding .credit span {
+    position: relative;
+    display: block;
+    transform: translate(0, 0) rotate(0.001deg);
+    transition: var(--animation-primary);
+}
+
+.branding a:hover .credit span {
+    transform: translate(0, 0) rotate(360deg);
+    
+}
+
+
+.branding .adriel-span {
+    transform: translateX(0) rotate(0.001deg);
+    position: relative;
+    display: inline-block;
+    padding-left: .21em;
+    padding-right: .2em;
+    transition: var(--animation-primary);
+}
+
+.branding a:hover .adriel-span {
+    padding-right: 2em;
+    transform: translateX(-3.7em) rotate(0.001deg);
+}
+
+.branding .cbd .laurentino {
+    position: absolute;
+    opacity: 1;
+    padding-left: 3.3em;
+    transition: var(--animation-primary);
+    top: 0;
+    left: 0;
+    transform: translateX(3.25em);
+    white-space: nowrap;
+    color: white;
+}
+
+.branding a:hover .laurentino {
+    padding-right: 4em;
+    transform: translateX(-0.5em) rotate(0.001deg);
+    color: white;
+}
+
+.branding .cbd {
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+
+
+.branding a {
+    color: color: white;
+    text-decoration: none;
+}
+
+
+

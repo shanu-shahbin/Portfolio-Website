@@ -1,0 +1,126 @@
+
+<div class="skills">
+  <div class="container">
+    {% for key, value in skills.items %}
+    {% if key == 'heading' %}
+    <div class="card">
+      <h3 class="title">{{ value }}</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <ul class="sub-skills">
+          {% for key, value in skills.items %}
+    {% if key != 'heading' %}
+      <li>{{ value }}</li>
+    {% endif %}
+  {% endfor %}
+        </ul>
+        {% endif %}
+    {% endfor %}
+      </div>
+    </div> 
+    {% for key, value in skills_1.items %}
+    {% if key == 'heading_1' %}
+    <div class="card">
+      <h3 class="title">{{ value }}</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <ul class="sub-skills">
+          {% for key, value in skills_1.items %}
+          {% if key != 'heading_1' %}
+            <li>{{ value }}</li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div> 
+    {% for key, value in skills_2.items %}
+    {% if key == 'heading_2' %}
+     <div class="card">
+      <h3 class="title">{{ value }}</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <ul class="sub-skills">
+          {% for key, value in skills_2.items %}
+          {% if key != 'heading_2' %}
+            <li>{{ value }}</li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div> 
+    {% for key, value in skills_3.items %}
+    {% if key == 'heading_3' %}
+    <div class="card">
+      <h3 class="title">{{ value }}</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <ul class="sub-skills">
+          {% for key, value in skills_3.items %}
+          {% if key != 'heading_3' %}
+            <li>{{ value }}</li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div> 
+    {% for key, value in skills_4.items %}
+    {% if key == 'heading_4' %}
+     <div class="card">
+      <h3 class="title">{{ value }}</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <ul class="sub-skills">
+          {% for key, value in skills_4.items %}
+          {% if key != 'heading_4' %}
+            <li>{{ value }}</li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div> 
+    {% for key, value in skills_5.items %}
+    {% if key == 'heading_5' %}
+     <div class="card">
+      <h3 class="title">{{ value }}</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <ul class="sub-skills">
+          {% for key, value in skills_1.items %}
+          {% if key != 'heading_1' %}
+            <li>{{ value }}</li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div> 
+    </div>
+  </div>
+</div>

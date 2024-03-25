@@ -1,0 +1,352 @@
+<style>
+  body{
+    background-color: #6c757d;
+    color: #fff;
+  }
+  .container {
+    display: flex;
+    margin-top: 100px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 90px;
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+  
+  img {
+     /* Adjust as needed */
+    width: 350px;
+    height: 350px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    
+  }
+    img:hover {
+        animation: flash 1s ease infinite alternate;
+
+  }
+
+  .work-content{
+    flex: 3;
+    padding: 40px;
+    padding-top: 0px;
+  }
+  .container-2 {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+  .education-experience{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 84px;
+  }
+  .bi.bi-arrow-down-right-circle-fill{
+    position: absolute;
+    padding-left: 22px;
+    padding-top: 0px;
+    width: 69px;
+    height: 88px;
+    fill: #fff;
+    
+  }
+  .bi.bi-arrow-down-right-circle-fill:hover{
+    fill: #000;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  .connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    background: #000;
+    border-radius: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+    color: #fff;
+    
+  }
+  
+  .connect:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .connect:hover::before, .connect:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+    
+  }
+  
+  .connect:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+  #slider {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    font-size: 50px;
+    position: center;
+  }
+  .pos{
+    margin-left: 50px;
+  }
+  
+  #sliderValue {
+    display: flex;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .start {
+    opacity: 0;
+  }
+  
+  .animation {
+    animation: fade .3s forwards;
+  }
+  
+  
+  @keyframes fade {
+    0%{
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .holder-animation {
+    animation: holder 4s;
+  }
+  
+  @keyframes holder {
+    0%{
+      opacity: 1;
+    }
+    95%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+</style>
+
+
+
+<div class="container">
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-down-right-circle-fill" viewBox="0 0 16 16">
+    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m5.904-2.803a.5.5 0 1 0-.707.707L9.293 10H6.525a.5.5 0 0 0 0 1H10.5a.5.5 0 0 0 .5-.5V6.525a.5.5 0 0 0-1 0v2.768z"/>
+  </svg>
+    <div class="col-md-6">
+      <div class="content"> 
+  I specialize in creating innovative solutions <br>
+   as a software engineer.
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12"></div>
+      <div class="image">
+        {% load static %}
+<img src="{% static 'images/i2.jpg' %}" alt="Avatar" class="avatar">
+
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</div>
+
+
+<div class="education-experience">
+  <div class="education">
+    <h1>Education</h1>
+    <hr>
+    <p>Bachelor of Technology in Computer Science & Engineering</p>
+    <ul>
+      <li>APJ Abdul Kalam Technological University</li>
+      <li>Graduation: June 2019 - July 2023</li>
+      <li>Grade CGPA: 6.9</li>
+    </ul>
+  </div>
+  
+  <div class="experience">
+    <h1>Experience</h1>
+    <hr>
+    {% for experience in experiences %}
+    <p>{{ experience.title }}</p>
+    <ul>
+      <li>{{ experience.company }}</li>
+      <li>{{ experience.start_date|date:"M Y" }} - {% if experience.end_date %}{{ experience.end_date|date:"M Y" }}{% else %}Present{% endif %}</li>
+      <li>{{ experience.description_1 }}</li>
+      <li>{{ experience.description_2 }}</li>
+    </ul>
+    {% endfor %}
+</div>
+
+</div>
+<div class="pos">
+<div id="slider">
+  <div class="span">Let me aid you with</div>
+  <div class="span" id="sliderValue"></div>
+</div></div>
+
+<div class="container-2">
+  {% for service in services %}
+  <div class="row">
+    <div class="work-content">
+      <h1>{{ service.id }}</h1>
+      <h1>{{ service.title }}</h1>
+      <p>{{ service.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<a href="{% url 'contactApp:Contact' %}"><div class="connect">Connect</div></a>
+<script>
+  // JavaScript script goes here
+  var sliderCounter = 0;
+  var sliderContent = [
+    "Web Development",
+    "WordPress Development",
+    "App Development",
+    "Plugin Development",
+    "CRM Integrations"
+  ];
+  var slider = document.querySelector("#slider");
+  var sliderValue = document.querySelector("#sliderValue");
+
+  function slide() {
+    if (sliderCounter >= sliderContent.length) {
+      sliderCounter = 0;
+    }
+
+    sliderValue.innerHTML = "";
+
+    sliderValue.classList.remove("holder-animation");
+    void sliderValue.offsetWidth;
+    sliderValue.classList.add("holder-animation");
+
+    for (i = 0; i < sliderContent[sliderCounter].length; i++) {
+      let letterDiv = document.createElement("div");
+      letterDiv.innerHTML = sliderContent[sliderCounter][i];
+
+      if (letterDiv.innerHTML == " ") {
+        letterDiv.innerHTML = "&nbsp;";
+      }
+      letterDiv.classList.add("start");
+      letterDiv.classList.add("animation");
+      letterDiv.style.animationDelay = i / 10 + "s";
+      sliderValue.appendChild(letterDiv);
+    }
+
+    sliderCounter++;
+  }
+
+  slide();
+  setInterval(slide, 4000);
+</script>
