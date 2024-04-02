@@ -24,9 +24,12 @@
     <link rel="stylesheet" href="{% static 'style/Skill-heading.css' %}">
     <link rel="stylesheet" href="{% static 'style/Works.css' %}">
     <link rel="stylesheet" href="{% static 'style/short-about.css' %}">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
+    <div id="preloader" style="background-image: url('{% static 'images/loader.gif' %}');"></div>
+
 <div class="wrapper-main">
 <div class="navbar">
     {% include 'navbar.html' %}
@@ -43,7 +46,7 @@
 <div class="skills">
     {% include 'skills.html' %}
 </div>
-<div class="skills-heading" ">
+<div class="skills-heading">
     {% include 'skill-heading.html' %}
 </div>
 <div class="works">
@@ -52,7 +55,8 @@
 <div class="footer-container">
     {% include 'footer.html' %}
 </div>
-</div>
+
+<script src="{% static 'scripts/loader.js' %}"></script>
 <script src="{% static 'scripts/Works.js' %}"></script>
 <script src="{% static 'scripts/magnetic.js' %}"></script>
 <script src="{% static 'scripts/projects.js' %}"></script>

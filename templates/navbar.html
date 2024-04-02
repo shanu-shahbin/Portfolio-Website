@@ -1,12 +1,18 @@
 {% load static %}
 <header class="navbar-part">
   <div class="row">
-  <nav class="navigation col-4 col-md-12 col-sm-12 col-lg-12">
-    <a href="{% url 'ProjectsApp:Projects' %}" class="">Projects</a>
-    <a href="{% url 'aboutApp:about' %}" class="">About</a>
-    <a href="{% url 'contactApp:Contact' %}" class="">Connect</a>
-  </nav>
+    <nav class="navigation col-12">
+      <div class="flex-container">
+        <div class="flex-item"><a href="{% url 'ProjectsApp:Projects' %}" class="">Projects</a></div>
+        <div class="flex-item"><a href="{% url 'aboutApp:about' %}" class="">About</a></div>
+        <div class="flex-item"><a href="{% url 'contactApp:Contact' %}" class="">Connect</a></div>
+      </div>
+    </nav>
+  </div>
 </header>
+
+
+
 <div class="branding magnetic">
                 <a class="btn-clicks" href="https://github.com/shanu-shahbin/" target="_blank">
                     <p class="btn-text">
@@ -21,5 +27,5 @@
                         </article>
                    </p>
                 </a>
-            </div>
+            </div>           
           </div>
