@@ -169,7 +169,7 @@
 @media (width < 650px) {
   .content {
     & .title        { font-size: 0.7rem; }
-    & .description  { font-size: 0.60rem; }
+    & .description  { font-size: 0.70rem; }
     & button        { font-size: 0.6rem; }
   }
   .item {

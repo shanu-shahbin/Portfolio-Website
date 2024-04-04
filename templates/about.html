@@ -2,6 +2,7 @@
   body{
     background-color: #6c757d;
     color: #fff;
+    overflow-x: hidden;
   }
   .container {
     display: flex;
@@ -29,14 +30,15 @@
   }
 
   .work-content{
-    flex: 3;
-    padding: 40px;
+    padding: 20px;
     padding-top: 0px;
+
   }
   .container-2 {
-    display: flex;
-    margin-top: 100px;
+    display: absolute;
+    margin-top: 40px;
     justify-content: space-between;
+    margin-left: 24px;
   }
   .education-experience{
     margin-top: 100px;
@@ -185,7 +187,7 @@
     width: 100%;
     display: flex;
     gap: 15px;
-    font-size: 50px;
+    font-size: 35px;
     position: center;
   }
   .pos{
@@ -233,8 +235,28 @@
       opacity: 0;
     }
   }
+  #service_text {
+    color: yellow;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+    text-align: left;
+    background-color: #000;
+    font-weight: 500;
+
+
+  }
+
+  #service_title{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+  }
 
 </style>
+ 
 
 
 
@@ -298,13 +320,15 @@
   {% for service in services %}
   <div class="row">
     <div class="work-content">
-      <h1>{{ service.id }}</h1>
-      <h1>{{ service.title }}</h1>
-      <p>{{ service.description }}</p>
+      
+      <h1 id="service_title">{{ service.id }}. {{ service.title }}</h1>
+      <p id="service_text">{{ service.description }}</p>
+
     </div>
   </div>
   {% endfor %}
 </div>
+
 
 <a href="{% url 'contactApp:Contact' %}"><div class="connect">Connect</div></a>
 <script>

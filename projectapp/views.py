@@ -3,7 +3,7 @@ from.models import Project
 from django.shortcuts import get_object_or_404
 
 def Projects(request):
-    projects = Project.objects.all()
+    projects = Project.objects.order_by('-pk')
     context = {
         'project_list': projects
     }

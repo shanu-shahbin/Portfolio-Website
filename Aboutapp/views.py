@@ -4,6 +4,7 @@ from .models import Experience, Services
 def About(request):
     experiences = Experience.objects.all()
     services = Services.objects.all()
+    
     context = {
         'experiences': experiences,
         'services': services
