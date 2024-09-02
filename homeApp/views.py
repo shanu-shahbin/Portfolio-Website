@@ -62,11 +62,7 @@ def home(request):
         'skill_06': skills.skill_06,
         'skill_07': skills.skill_07,
         'skill_08': skills.skill_08,
-        'skill_09': skills.skill_09,
-        'skill_10': skills.skill_10,
-        'skill_11': skills.skill_11,
-        'skill_12': skills.skill_12,
-        'skill_13': skills.skill_13,
+        
         
     }
 
@@ -81,11 +77,7 @@ def home(request):
         'skill_19': skill_1.skill_19,
         'skill_20': skill_1.skill_20,
         'skill_21': skill_1.skill_21,
-        'skill_22': skill_1.skill_22,
-        'skill_23': skill_1.skill_23,
-        'skill_24': skill_1.skill_24,
-        'skill_25': skill_1.skill_25,
-        'skill_26': skill_1.skill_26,
+        
     }
 
     skills_dict_2 = {
@@ -98,11 +90,7 @@ def home(request):
         'skill_32': skill_2.skill_32,
         'skill_33': skill_2.skill_33,
         'skill_34': skill_2.skill_34,
-        'skill_35': skill_2.skill_35,
-        'skill_36': skill_2.skill_36,
-        'skill_37': skill_2.skill_37,
-        'skill_38': skill_2.skill_38,
-        'skill_39': skill_2.skill_39,
+        
     }
 
     skills_dict_3 = {
@@ -114,12 +102,7 @@ def home(request):
         'skill_44': skill_3.skill_44,
         'skill_45': skill_3.skill_45,
         'skill_46': skill_3.skill_46,
-        'skill_47': skill_3.skill_47,
-        'skill_48': skill_3.skill_48,
-        'skill_49': skill_3.skill_49,
-        'skill_50': skill_3.skill_50,
-        'skill_51': skill_3.skill_51,
-        'skill_52': skill_3.skill_52,
+        
     }
 
     skills_dict_4 = {
@@ -132,11 +115,7 @@ def home(request):
         'skill_58': skill_4.skill_58,
         'skill_59': skill_4.skill_59,
         'skill_60': skill_4.skill_60,
-        'skill_61': skill_4.skill_61,
-        'skill_62': skill_4.skill_62,
-        'skill_63': skill_4.skill_63,
-        'skill_64': skill_4.skill_64,
-        'skill_65': skill_4.skill_65,
+        
     }
 
     skills_dict_5 = {
@@ -149,11 +128,7 @@ def home(request):
         'skill_71': skill_5.skill_71,
         'skill_72': skill_5.skill_72,
         'skill_73': skill_5.skill_73,
-        'skill_74': skill_5.skill_74,
-        'skill_75': skill_5.skill_75,
-        'skill_76': skill_5.skill_76,
-        'skill_77': skill_5.skill_77,
-        'skill_78': skill_5.skill_78,
+
         }
 
 
