@@ -54,7 +54,7 @@ a{
   top: -5%;    
   display: inline-block;
   padding: 15px 20px;
-  margin: 15% 0;
+  margin: 10% 0;
   color: #03e9f4;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ a{
 }
 
 a + a {
-  margin-left: 10%;
+  margin-left: 30%;
  
 }
 
@@ -223,14 +223,18 @@ a span:nth-child(4){
     overflow: hidden;
   
   }
+
   
 }
-
- 
+@media only screen and (min-width: 1300px) {
+  a + a {
+    margin-left: 40%;
+  }
+}
 </style></head>
 
 {% load static %}
-<div class="container mx-auto mt-4">
+<div class="container mx-auto mt-4 content-wrapper">
   <div class="row">
     {% for project in project_list %}
     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 gy-5 gx-5">

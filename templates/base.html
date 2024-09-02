@@ -29,8 +29,10 @@
 </head>
 <body>
     <div id="preloader" style="background-image: url('{% static 'images/loader.gif' %}');"></div>
-
-<div class="wrapper-main">
+    <div class="mobile-warning">
+        This application is not available on screens smaller than 768px.
+    </div>
+<div class="wrapper-main content-wrapper">
 <div class="navbar">
     {% include 'navbar.html' %}
 </div>
@@ -39,20 +41,20 @@
     {% block content %}
     {% endblock %}
 </div>
-<div class="short-about">
+<div class="short-about content-wrapper">
     {% include 'short-about.html' %}
 </div>
 
-<div class="skills">
+<div class="skills content-wrapper">
     {% include 'skills.html' %}
 </div>
-<div class="skills-heading">
+<div class="skills-heading content-wrapper">
     {% include 'skill-heading.html' %}
 </div>
-<div class="works">
+<div class="works content-wrapper">
     {% include 'works.html' %}
 </div>
-<div class="footer-container">
+<div class="footer-container content-wrapper">
     {% include 'footer.html' %}
 </div>
 
