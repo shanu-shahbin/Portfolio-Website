@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?familt=poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
-    background-color: #000;
+    background-color: #121f34;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
 @media only screen and (max-width: 600px) {
     .navigation a {
       font-size: 18px;
-      color: #fff;
+      color: #62f3ff;
     }
     .navbar-part{
         margin-left: 50%;
@@ -27,7 +27,7 @@ body {
   @media only screen and (min-width: 601px) and (max-width: 1200px) {
     .navigation a {
       font-size: 23px;
-      color: #fff;
+      color: #62f3ff;
     }
     .navbar-part{
         margin-left: 45%;
@@ -39,7 +39,7 @@ body {
   @media only screen and (min-width: 1201px) and (max-width: 2000px) {
     .navigation a {
       font-size: 25px;
-      color: #fff;
+      color: #62f3ff;
     }
     .navbar-part{
         margin-left: 70%;
@@ -79,7 +79,7 @@ header{
   
 .navigation a {
     text-decoration: none;
-    color: #ffffff;
+    color: #62f3ff;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
@@ -95,7 +95,7 @@ header{
 
 .navigation a:hover, .navigation a.active {
     background: #fff;
-    color: #000;
+    color: #62f3ff;
    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0;
    
 
