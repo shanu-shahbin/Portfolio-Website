@@ -89,6 +89,7 @@ header{
     justify-content: center;
     align-items: center;
     transition: background-color 2s, color 1s, box-shadow 4s;
+    font-family: ui-monospace;
    
 
 }
