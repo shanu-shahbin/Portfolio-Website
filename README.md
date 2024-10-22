@@ -91,6 +91,6 @@ To run this project locally, follow these steps:
 - Integrate a blog section to share insights and experiences.
 - Enhance UI/UX with modern design patterns and accessibility features.
 - Optimize performance and load times across all devices.
-
+- it is not responsive for mobile views so implement responsive across all devices
 Thank you for visiting my portfolio! Feel free to reach out through the contact section for any inquiries or collaborations. Looking forward to connecting with you!
 ```
